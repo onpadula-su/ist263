@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Owen Contact</title>
+        <link rel="stylesheet" href="lab07styles.css">
+    </head>
+    <body>
+        <nav><a href="http://onpadula-su.github.io/ist263/lab07">Home</a> | <a href="http://onpadula-su.github.io/ist263/lab07/skills.html">Skills</a> | <a href="http://onpadula-su.github.io/ist263/lab07">Contact</a></nav>
+        <h1>Contact</h1>
+        <h2>Owen Padula</h2>
+        <p>401 Van Buren St, Syracuse, NY 13244</p>
+        <a href="https://www.linkedin.com/in/owenpadula/">My LinkedIn Profile  <img src="../images/LI-logo-sized.png" alt="LinkedIn logo" ></a> 
+        <br>
+        <a href="mailto:onpadula@syr.edu">My Email</a> 
+        <br>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2916.164139014572!2d-76.14297352385549!3d43.037977871138004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f3990a464a79%3A0xd5ee879899fe2899!2sBrewster%2C%20401%20Van%20Buren%20St%2C%20Syracuse%2C%20NY%2013210!5e0!3m2!1sen!2sus!4v1706805163649!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <form action="https://formspree.io/f/xleqjvzg" method="post">
+            <!-- Your Name -->
+            <!-- Email -->
+            <!-- Select between SU student, company -->
+            <!-- leave a message -->
+            <label for="fullname">Full Name:</label><br> 
+            <input type="text" id="fullname" name="fullname"><br>
+            <label for="email">Your Email:</label><br> 
+            <input type="text" id="email" name="email"><br>
+            <input type="radio" id="student" name="userinfo" value="student">
+            <label for="student">SU Student</label><br>
+            <input type="radio" id="company" name="userinfo" value="company">
+            <label for="company">Company</label><br>
+            <input type="radio" id="professor" name="userinfo" value="professor">
+            <label for="professor">Professor</label><br>
+            <input type="radio" id="other" name="userinfo" value="other">
+            <label for="other">Other</label><br>
+            <label for = "message">Leave a message:</label><br>
+            <textarea id="message" name="message"></textarea><br>
+            <input type="submit" value="Send Form">
+        </form>
+    </body>
+</html>
