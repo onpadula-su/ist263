@@ -8,10 +8,12 @@ nav a:link {color: #81A8B8;}
 nav a:visited {color: #A4BCC2;}
 nav a:hover {background-color: #DBE6EC;}
 .quote {float: right; margin-right:5px;}
-.skills_intro {margin: 50px 265px 0px 80px}
+.intro_flex {display: flex; margin-left: 100px;}
+.intro_left {flex:3}
+.intro_right {flex:1}
 .inline_center {text-align: center;}
 .icon {width: 15%;}
-.skills_flex {display: flex; margin: 0px 50px 0px 50px;}
+.skills_flex {display: flex; margin: 0px 50px 0px 50px; max-width: 100%;}
 .icon_skills {display: flex; margin-top: 80px; text-align: center;}
 .skills_left {flex: 3;}
 .skills_right {flex: 1;}
