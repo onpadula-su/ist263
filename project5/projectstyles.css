@@ -1,0 +1,98 @@
+
+
+
+
+.header_img {
+    width: 100%;
+    object-fit: cover;
+    margin: 0;
+}
+
+#navbar {
+    display: flex;
+    overflow: hidden;
+    background-color: #030303;
+    z-index: 1000;
+}
+#navbar a {
+    color: #ffffff;
+    display: block;
+    justify-content: space-around;
+    text-align: center;
+    flex-grow: 1;
+    padding: 15px;
+    margin: auto;
+}
+
+#navbar a:hover {
+    background-color: #434343;
+}
+
+.content {
+    padding: 16px;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.sticky + .content {
+    padding-top: 60px
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+}
+.container img{
+    width: 100%;
+    height: 100%
+}
+.container button {
+    background-color: #ffffff;
+    opacity: 75%;
+    border-radius: 4px;
+}
+.container .button1{
+    position: absolute;
+    top: 76%;
+    left: 57%; 
+    transform: translate(-50%, -50%);
+}
+.container .button2{
+    position: absolute;
+    top: 35%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+.container .button3{
+    position: absolute;
+    top: 31%;
+    left: 53%; 
+    transform: translate(-50%, -50%);
+}
+.container .button4{
+    position: absolute;
+    top: 35%;
+    left: 55%; 
+    transform: translate(-50%, -50%);
+}
+.container .button5{
+    position: absolute;
+    top: 28%;
+    left: 49%; 
+    transform: translate(-50%, -50%);
+}
+.container .button6{
+    position: absolute;
+    top: 58%;
+    left: 78%; 
+    transform: translate(-50%, -50%);
+}
+.container .button7{
+    position: absolute;
+    top: 62%;
+    left: 79%; 
+    transform: translate(-50%, -50%);
+}

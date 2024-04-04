@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owen's Travel Log</title>
+    <link rel="stylesheet" href="projectstyles.css">
+</head>
+<body>
+  <img class="header_img" src="flowers.jpg" alt="flowers" width="100%">
+    <nav id="navbar" class="navigation">
+        <a href="">Home</a>
+        <a href="">Gallery</a>
+        <a href="">Locations</a>
+    </nav>
+    <div class="container">
+
+      <img src="map_background.png" alt="World Map" width="100%">
+      <button onclick="showSouthafrica()" class="button1" >South Africa</button>
+      <button onclick="showFrance()" class="button2">France</button>
+      <button class="button3">Germany</button>
+      <button class="button4">Austria</button>
+      <button class="button5">United Kingdom</button>
+      <button class="button6">Malaysia</button>
+      <button class="button7">Singapore</button>
+
+    </div>
+   
+    <div class=p id="southafrica_popup" style="display: none;">
+      <h2>SOUTH AFRICA Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, ratione soluta doloremque, alias quo, omnis dolorem reprehenderit quia earum odio veniam illo illum voluptatum in. Doloremque iusto expedita consequatur error?</h2>
+    </div>
+    <div class=p id="france_popup" style="display: none;">
+      <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, ratione soluta doloremque, alias quo, omnis dolorem reprehenderit quia earum odio veniam illo illum voluptatum in. Doloremque iusto expedita consequatur error?</h2>
+    </div>
+    <div class=p id="germany_popup" style="display: none;">
+      <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, ratione soluta doloremque, alias quo, omnis dolorem reprehenderit quia earum odio veniam illo illum voluptatum in. Doloremque iusto expedita consequatur error?</h2>
+    </div>
+    <div class=p id="austria_popup" style="display: none;">
+      <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, ratione soluta doloremque, alias quo, omnis dolorem reprehenderit quia earum odio veniam illo illum voluptatum in. Doloremque iusto expedita consequatur error?</h2>
+    </div>
+    <div class=p id="unitedkingdom_popup" style="display: none;">
+      <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, ratione soluta doloremque, alias quo, omnis dolorem reprehenderit quia earum odio veniam illo illum voluptatum in. Doloremque iusto expedita consequatur error?</h2>
+    </div>
+    <div class=p id="malaysia_popup" style="display: none;">
+      <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, ratione soluta doloremque, alias quo, omnis dolorem reprehenderit quia earum odio veniam illo illum voluptatum in. Doloremque iusto expedita consequatur error?</h2>
+    </div>
+    <div class=p id="singapore_popup" style="display: none;">
+      <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, ratione soluta doloremque, alias quo, omnis dolorem reprehenderit quia earum odio veniam illo illum voluptatum in. Doloremque iusto expedita consequatur error?</h2>
+    </div>
+    
+    <script>
+      window.onscroll = function() {stickyNav()};
+
+      var navbar = document.getElementById("navbar");
+      var sticky = navbar.offsetTop;
+      
+      function stickyNav() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky")
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+      function showSouthafrica() {
+        var x = document.getElementById("southafrica_popup");
+        x.style.display = "block";
+      }
+      function showFrance() {
+        var x = document.getElementById("france_popup");
+        x.style.display = "block";
+      }
+
+    </script>
+</body>
+</html>
