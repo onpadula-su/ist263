@@ -80,25 +80,30 @@ body {
     display: none;
     visibility: hidden;
     text-align: center;
-    position: absolute;
-    top: 1675px;
-    left: 50%;
-    transform: translate(-50%, -50%);
     padding: 20px;
     border: 2px solid #434343;
     border-radius: 12px;
     color: #ffffff;
+    margin: 50px 20px 50px 20px;
 }
 
 .container {
     position: relative;
     width: 100%;
     max-width: 100%;
-    margin-bottom: 160px;
+    
+}
+.buttons2 {
+    text-align: center;
 }
 .container img{
     width: 100%;
     height: 100%
+}
+@media only screen and (max-width: 1200px)  {
+    .container button{display:none;}
+}@media only screen and (min-width: 1200px)  {
+    .buttons2 button{display:none;}
 }
 .container button {
     background-color: #ffffff;
