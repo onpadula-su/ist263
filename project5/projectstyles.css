@@ -1,5 +1,6 @@
 * {
     margin:0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 body {
@@ -166,13 +167,16 @@ body {
 
 table {
     text-align: center;
-    border: 2px solid #ffffff;;
+    width: 80%;
+    margin: 20px auto 20px auto;
+    border-collapse: collapse;
 }
 tr {
-    background: #434343;
-    border: 2px solid #434343
+    height: 50px;
+    background-color: #434343;
+    margin: 0;
+    padding: 0;
 }
-.evenrow {
-    background: #343434;
-    border: 2px solid #343434
+.title {
+    background-color: #343434; 
 }
