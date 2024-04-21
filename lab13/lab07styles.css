@@ -1,0 +1,37 @@
+body {background-color: #C2CBCE;}
+p {color: #000000;}
+h1 {color: #000000;}
+a:link {color: #E8F3F8;}
+a:visited {color: #81A8B8;}
+nav {background-color: #E8F3F8; padding: 10px; margin-bottom: 30px;}
+nav a:link {color: #81A8B8;}
+nav a:visited {color: #A4BCC2;}
+nav a:hover {background-color: #DBE6EC;}
+.quote {float: right; margin-right:5px;}
+.intro_flex {display: flex; margin-left: 100px;}
+.intro_left {flex:3}
+.intro_right {flex:1}
+.inline_center {text-align: center;}
+.icon {width: 15%;}
+.skills_flex {display: flex; margin: 0px 50px 0px 50px; max-width: 100%;}
+.icon_skills {display: flex; margin-top: 80px; text-align: center;}
+.skills_left {flex: 3;}
+.skills_right {flex: 1;}
+aside{background-color: #E8F3F8; border-radius: 8px; padding-left: 30px}
+.header_image{max-width: 100%;}
+@media only screen and (max-width: 500px)  {
+    nav a:link{size: 100%; display: block; padding: 5px 0px 5px 0px; margin: 5px 0px 5px 0px;}
+    nav span{display:none;}
+}
+.skip {
+    background-color: #DBE6EC;
+    padding: 8px;
+    border: 2px solid #000000;
+    text-decoration: none;
+    position: absolute; /*positions relative to top and bottom of viewport*/
+    top: 10px;
+    left: -999px; /* push the button off screen */
+}
+.skip:focus { /* when the button is tabbed to */
+    left: 10px; 
+}
