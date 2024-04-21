@@ -1,11 +1,11 @@
 body {background-color: #C2CBCE;}
 p {color: #000000;}
 h1 {color: #000000;}
-a:link {color: #E8F3F8;}
-a:visited {color: #81A8B8;}
+a:link {color: #406472;}
+a:visited {color: #253941;}
 nav {background-color: #E8F3F8; padding: 10px; margin-bottom: 30px;}
 nav a:link {color: #406472;}
-nav a:visited {color: #A4BCC2;}
+nav a:visited {color: #253941;}
 nav a:hover {background-color: #DBE6EC;}
 .quote {float: right; margin-right:5px;}
 .intro_flex {display: flex; margin-left: 100px;}
