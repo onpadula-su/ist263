@@ -3,6 +3,20 @@
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
+.skip {
+    background-color: #121212;
+    padding: 8px;
+    border: 2px solid #000000;
+    text-decoration: none;
+    position: absolute; /*positions relative to top and bottom of viewport*/
+    top: 10px;
+    /* left: -999px; /* push the button off screen */
+}
+
+.skip:focus { /* when the button is tabbed to */
+    left: 10px; 
+}
+
 a:link {color: #c5e7f8;}
 
 a:visited {color: #6a7c85;}
@@ -118,9 +132,11 @@ body {
 }
 @media only screen and (max-width: 1200px)  {
     .container button{display:none;}
-}@media only screen and (min-width: 1200px)  {
+    }
+@media only screen and (min-width: 1200px)  {
     .buttons2 button{display:none;}
 }
+
 .container button {
     background-color: #ffffff;
     opacity: 75%;
@@ -170,6 +186,7 @@ body {
 }
 .highlights {
     display: flex;
+    flex-wrap: wrap;
     color: #ffffff;
 }
 .highlight_1, .highlight_2, .highlight_3 {
@@ -186,19 +203,56 @@ body {
     height: auto;
 }
 
-table {
-    text-align: center;
-    width: 80%;
+.tablediv {
+    overflow-x:auto;  
     margin: 20px auto 20px auto;
-    background-color: #343434;
-    border: solid white 1px;
-    border-radius: 20px;    
+    width: 80%;
 }
 
-td {
-    background-clip: padding-box;
-    height: 50px;
-    margin: 0;
-    padding: 10px;
+caption {
+    background: #121212;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight: 700;
+    text-size-adjust: 5em;
+}
+
+table {
+    width: 100%;
+    background: #323232;
+    border-collapse: collapse;
+}
+
+td, td {
+    padding: 1rem
+}
+
+th {
+    background: #121212;
+    padding-bottom: 10px;
+}
+
+tr:nth-of-type(2n) { 
+    background: hsl(0 0% 0% / 0.2);
+}
+
+@media only screen and (max-width: 600px)  {
+    td:first-child {
+        padding-top: 2rem;
+    }
+    td:last-child {
+        padding-bottom: 2rem;
+    }
+    th {
+        display: none;
+    }
+    td {
+        display: block;
+        padding: 0.5rem 1rem;
+    }
+    td::before {
+        content: attr(data-cell) ": ";
+        font-weight: 700;
+    }
 }
 
