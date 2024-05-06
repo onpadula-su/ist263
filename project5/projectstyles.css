@@ -21,6 +21,10 @@ a:link {color: #c5e7f8;}
 
 a:visited {color: #6a7c85;}
 
+h1 {
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+}
 body {
     background-color: #000000;
     color: #ffffff;
@@ -209,13 +213,6 @@ body {
     width: 80%;
 }
 
-caption {
-    background: #121212;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    font-weight: 700;
-    text-size-adjust: 5em;
-}
 
 table {
     width: 100%;
@@ -229,6 +226,7 @@ td, td {
 
 th {
     background: #121212;
+    padding-top: 10px;
     padding-bottom: 10px;
 }
 
